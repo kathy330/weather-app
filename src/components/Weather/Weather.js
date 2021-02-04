@@ -13,7 +13,7 @@ class Weather extends React.Component{
         super(props)
         this.state = {
             curTemp: '',
-            city: this.props.city,
+            city: this.props.city.replace(/\s/g, ''),
             humidity: '',
             weatherDesc: '',
             wind: '',
@@ -54,7 +54,7 @@ class Weather extends React.Component{
                         weatherDesc={this.state.weatherDesc}
                         humidity={this.state.humidity} 
                         wind={this.state.wind}/>
-                    <WeatherHeadRight city={this.state.city}/>
+                    <WeatherHeadRight city={this.props.city}/>
                 </div>
                 <div className="weather__body">     
                     <WeatherBodyLeft />
