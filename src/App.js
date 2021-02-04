@@ -5,7 +5,7 @@ import Weather from './components/Weather/Weather'
 function App() {
   return (
     <main>
-      <Weather city="Sydney"/>
+      <Weather city="Shanghai"/>
     </main>
   );
 }

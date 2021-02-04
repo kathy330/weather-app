@@ -6,7 +6,7 @@ import WeatherHeadRight from './WeatherHeadRight'
 import WeatherBodyLeft from './WeatherBodyLeft'
 import WeatherBodyRight from './WeatherBodyRight'
 
-const API_key = '0ef1aad5c4bd678425b05befd8035017';
+const API_key = process.env.REACT_APP_WEATHER_API_KEY;
 
 class Weather extends React.Component{
     constructor(props){
@@ -21,7 +21,11 @@ class Weather extends React.Component{
         }
     }
 
-    async componentDidMount() {
+    componentDidMount() {
+        this.getWeatherInfo()
+    }
+
+    async getWeatherInfo(){
         // call API
         const api = `http://api.openweathermap.org/data/2.5/weather?q=${this.state.city}&appid=${API_key}&units=metric`;
         const res = await Axios.get(api)
@@ -38,16 +42,18 @@ class Weather extends React.Component{
             weatherDesc: description,
             wind: speed,
             forcast: daily.slice(1,6)
-        })
-        
+        })    
     }
 
     render(){
         return(
             <div className="weather">
                 <div className="weather__head">
-                    <WeatherHeadLeft curTemp={this.state.curTemp} weatherDesc={this.state.weatherDesc}
-                    humidity={this.state.humidity} wind={this.state.wind}/>
+                    <WeatherHeadLeft 
+                        curTemp={this.state.curTemp} 
+                        weatherDesc={this.state.weatherDesc}
+                        humidity={this.state.humidity} 
+                        wind={this.state.wind}/>
                     <WeatherHeadRight city={this.state.city}/>
                 </div>
                 <div className="weather__body">     

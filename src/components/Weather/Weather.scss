@@ -12,7 +12,7 @@
         flex-wrap: wrap;
         background: url('./images/weatherBG.png'), linear-gradient(0.25turn, #79B5BD 40%, #1b237c);
         background-repeat: no-repeat;
-        min-height: 250px;
+        min-height: 15.6rem;
         border-radius: 15px 15px 0 0;
         @at-root &--left{
             display: flex;
@@ -33,7 +33,7 @@
         display: flex;
         flex-wrap: wrap;
         background: #ededed;
-        min-height: 300px;
+        min-height: 18.75rem;
         border-radius: 0 0 15px 15px;
         @at-root &--left{
             display: flex;
