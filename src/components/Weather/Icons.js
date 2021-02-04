@@ -4,10 +4,12 @@ import {
 	faCloud,
 	faSun,
     faCloudRain,
-    faSnowflake
+    faSnowflake,
+    faPooStorm
 } from '@fortawesome/free-solid-svg-icons';
 
-export const Sun = <FontAwesomeIcon icon={faSun} />;
-export const Rain = <FontAwesomeIcon icon={faCloudRain} />;
-export const Cloud = <FontAwesomeIcon icon={faCloud} />;
-export const Snow = <FontAwesomeIcon icon={faSnowflake} />;
+export const Sun = <FontAwesomeIcon icon={faSun} color="#dfce50"/>;
+export const Rain = <FontAwesomeIcon icon={faCloudRain} color="#4d719e"/>;
+export const Cloud = <FontAwesomeIcon icon={faCloud} color="#87ceeb"/>;
+export const Snow = <FontAwesomeIcon icon={faSnowflake} color="#d1dad9"/>;
+export const Storm = <FontAwesomeIcon icon={faPooStorm} color="#666"/>;
