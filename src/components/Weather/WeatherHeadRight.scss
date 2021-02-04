@@ -1,0 +1,35 @@
+.weather__head--right{
+    justify-content: flex-end;
+}
+
+.weather__city{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 2.5rem;
+    position: relative;
+    line-height: 2.5rem;
+    height: fit-content;
+    padding: 20px;
+    text-shadow: 5px 5px 10px #3d3d3d;
+
+    &:after{
+        content: '';
+        height: 3px;
+        background: white;
+        width: 50%;
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+        box-shadow: 3px 3px 5px #3d3d3d;
+    }
+}
+
+@media (max-width: 576px) {
+    .weather__head--right{
+        justify-content: center;
+    }
+    .weather__city{
+        margin: 0;
+    }
+}

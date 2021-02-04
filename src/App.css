@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+main{
+  max-width: 970px;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+}
+
+body{
+  background: linear-gradient(217deg, hsl(204deg 77% 52% / 73%), rgba(255,0,0,0) 70.71%), 
+    linear-gradient(127deg, rgb(163 74 192), rgba(0,255,0,0) 70.71%), 
+    linear-gradient(360deg, #ffeb3b, rgba(0,0,255,0) 70.71%);
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 576px) {
+  main{
+    height: auto;
+    padding: 20px;
+  }
+  body{
+    height: auto;
+  }
+}

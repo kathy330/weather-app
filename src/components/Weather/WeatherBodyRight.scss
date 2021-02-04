@@ -1,0 +1,11 @@
+.weather__forcast{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+@media (max-width: 576px) {
+    .weather__forcast{
+        justify-items: center;
+    }    
+}

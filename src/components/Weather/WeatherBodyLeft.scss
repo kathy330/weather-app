@@ -1,0 +1,52 @@
+.media{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+
+    @at-root &__avatar{
+        color: #3f51b5;
+        font-size: 30px;
+        padding: 15px;
+    }
+}
+
+.media li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #35459c;
+    font-weight: 600;
+}
+
+.pagination svg{
+    margin-left: 20px;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+
+@media (max-width: 576px) {
+    .media{
+        padding: 0;
+    }
+}
+
+h3{
+    padding: 20px 20px 0 20px;
+    display: flex;
+    line-height: 50px;
+    color: #3f51b5;
+    .svg-inline--fa{
+        font-size: 30px;
+        padding: 10px;
+        color: #2196f3;
+    }
+}
