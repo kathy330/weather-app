@@ -1,4 +1,3 @@
-import './WeatherForcastEachDay.scss'
 import {Sun, Rain, Cloud, Snow} from './Icons'
 
 const iconSwitch = (props) =>{

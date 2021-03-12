@@ -1,4 +1,5 @@
-import './App.css';
+import './App.css'
+import './style/Style.scss'
 import Weather from './components/Weather/Weather'
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
     <main>
       <Weather city="Sydney"/>
     </main>
-  );
+  )
 }
 
-export default App;
+export default App

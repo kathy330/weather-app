@@ -1,4 +1,3 @@
-import './WeatherBodyRight.scss'
 import WeatherForcastEachDay from './WeatherForcastEachDay'
 
 const WeatherBodyRight = (props) => {

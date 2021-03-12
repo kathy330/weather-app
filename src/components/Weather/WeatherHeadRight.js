@@ -1,5 +1,3 @@
-import './WeatherHeadRight.scss'
-
 const WeatherHeadRight = (props) => {
     return(
         <div className="weather__head--right">

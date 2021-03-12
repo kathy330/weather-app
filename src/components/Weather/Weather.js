@@ -1,5 +1,4 @@
 import React from 'react'
-import './Weather.scss'
 import Axios from 'axios'
 import WeatherHeadLeft from './WeatherHeadLeft'
 import WeatherHeadRight from './WeatherHeadRight'
